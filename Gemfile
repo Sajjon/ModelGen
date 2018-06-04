@@ -1,5 +1,12 @@
-# frozen_string_literal: true
 source 'https://rubygems.org'
 
-gem 'cocoapods', '1.3.1'
-gem 'xcpretty'
+# The bare minimum for building, e.g. in Homebrew
+group :build do
+    gem 'rake', '~> 10.4'
+    gem 'xcpretty'
+end
+
+# In addition to :build, for contributing
+group :development do
+    gem "cocoapods", "~> 1.5"
+end
