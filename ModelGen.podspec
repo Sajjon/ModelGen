@@ -13,6 +13,7 @@ Pod::Spec.new do |s|
   s.author       = { "Heberti Almeida" => "hebertialmeida@gmail.com" }
   s.social_media_url = "https://twitter.com/hebertialmeida"
 
-  s.source       = { :http => "#{s.homepage}/archive/#{s.version}.zip" }
+  s.source       = { :http => "https://github.com/eberrydigital/ModelGen/archive/0.3.0.zip" }
   s.preserve_paths = '*'
+  s.exclude_files  = '**/file.zip'
 end
